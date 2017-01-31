@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disappearing Boxes!</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('img').click(function(){
+				$(this).hide();
+			});
+
+			$('button').click(function(){
+				$('img').show();
+			});
+
+
+		});
+	</script>
+
+	<style>
+		img{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<img src="dogs.jpg" id="image1" height="100" />
+	<img src="dogs.jpg" id="image2" height="100" />
+	<img src="dogs.jpg" id="image3" height="100" />
+	<img src="dogs.jpg" id="image4" height="100" />
+	<img src="dogs.jpg" id="image5" height="100" />
+	<img src="dogs.jpg" id="image6" height="100" />
+	<img src="dogs.jpg" id="image7" height="100" />
+	<img src="dogs.jpg" id="image8" height="100" />
+	<button>Bring the Puppies Back!</button>
+</body>
+</html>
